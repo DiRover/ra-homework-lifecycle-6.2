@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import TextBox from './TextBox';
-const url = 'http://localhost:7777/notes';
+//const url = 'http://localhost:7777/notes';
+const url = 'https://lifecycle-server.herokuapp.com/notes';
 
 
 export default function Crud(props) {
