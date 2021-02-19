@@ -1,22 +1,22 @@
-image: Ubuntu1804
+image: Ubuntu1804 # образ для сборки
 
-stack: node 10
+stack: node 12 # окружение
 
 branches:
   only:
-    - master
+    - master # ветка git
 
-cache: node_modules
+cache: node_modules # кеширование
 
 install:
-  - npm install
+  - npm install # команда установки зависимостей
 
-build: off
+build: off # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - npm run build
+  - npm run build # команда сборки
 
-deploy_script:
+deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
   - git config --global user.email ci@appveyor.com
