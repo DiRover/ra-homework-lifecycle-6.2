@@ -1,3 +1,14 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/7wy6jc544is5236u?svg=true)](https://ci.appveyor.com/project/DiRover/ra-homework-lifecycle-6-2)
+
+
+
+
+[RA PAGE Task 4.2 WEBSOCKET](https://dirover.github.io/ra-homework-lifecycle-6.2/)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
