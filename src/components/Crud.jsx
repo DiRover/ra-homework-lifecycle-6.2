@@ -12,6 +12,8 @@ export default function Crud(props) {
     useEffect(() => {
         async function fetchData() {
             let response;
+            const text = request.requestBody;
+            const obj = { content: text };
             if (request.requestMethod === 'GET') {
                 response = await fetch(url, {
                     method: request.requestMethod,
@@ -19,7 +21,10 @@ export default function Crud(props) {
             } else if (request.requestMethod === 'POST') {
                 response = await fetch(url, {
                     method: request.requestMethod,
-                    body: request.requestBody
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(obj)
                 });
                 response = await fetch(url, { method: 'GET' });
             } else {
