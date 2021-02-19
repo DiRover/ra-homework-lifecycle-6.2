@@ -3,7 +3,7 @@
 
 
 
-[RA PAGE Task 4.2 WEBSOCKET](https://dirover.github.io/ra-homework-lifecycle-6.2/)
+[RA PAGE Task 6.2](https://dirover.github.io/ra-homework-lifecycle-6.2/)
 
 
 
